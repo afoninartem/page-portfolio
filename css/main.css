@@ -71,9 +71,6 @@ a {
     margin-left: auto;
 }
 
-.row { /* остается пустой, можно даже удалить */
-
-}
 
 .row::after { /* для решения проблем с обтеканием */
     clear: both;
@@ -162,14 +159,19 @@ a {
     background-color: #83464d;
 }
 /*-------------------FOOTER--------------------------*/
-
+.hide {
+    display: none;
+}
 .footer {
     background-color: #83464d;
     color: #e3aba9;
     padding-top: 90px;
     padding-bottom: 190px;
 }
-
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
 .footer p {
     margin-top: 0px;
     margin-bottom: 15px;
